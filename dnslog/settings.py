@@ -18,7 +18,7 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 # CSRF
 CSRF_TRUSTED_ORIGINS = [
     "http://localhost:8080", "http://localhost",
-    "http://%s" % (os.getenv("ADMIN_DOMAIN", "eyes.sh")),
+    "http://%s:8080" % (os.getenv("ADMIN_DOMAIN", "eyes.sh")),
     "https://%s" % (os.getenv("ADMIN_DOMAIN", "eyes.sh"))
 ]
 
